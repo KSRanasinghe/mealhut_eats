@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MealHutEats.CustomBottomNavText" parent="@style/Widget.Material3.BottomNavigationView">
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+</resources>

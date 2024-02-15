@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageViewRegister"
+        android:layout_width="0dp"
+        android:layout_height="276dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auth_screen_bg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRegister">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/logo_part_one"
+            android:textColor="@color/primary_green"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/logo_part_two"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/logo_part_three"
+            android:textColor="@color/primary_green"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/logo_part_four"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/logo_part_five"
+            android:textColor="@color/primary_green"
+            android:textSize="45sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSlogn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/mealhut_slogan"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/primary_gray"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSlogn">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/innerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextRegisterEmailPhone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/custom_input_shape"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:hint="@string/login_email_phone_editText"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/innerContainer" />
+
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/custom_input_shape"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:hint="@string/login_password_editText"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRegisterEmailPhone" />
+
+            <EditText
+                android:id="@+id/editTextPasswordConfirm"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/custom_input_shape"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:hint="@string/login_password_confirm_editText"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_sign_up"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextPasswordConfirm"
+                app:layout_constraintStart_toStartOf="@+id/editTextPasswordConfirm"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPasswordConfirm" />
+
+            <TextView
+                android:id="@+id/textViewSigninLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/text_signin_link"
+                android:textColor="@color/primary_gray"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:lineHeight="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

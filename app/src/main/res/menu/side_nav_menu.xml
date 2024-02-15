@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/sideNavGroupMain">
+        <item
+            android:id="@+id/sideNavHome"
+            android:checked="true"
+            android:icon="@drawable/home"
+            android:title="@string/side_nav_home_title" />
+        <item
+            android:id="@+id/sideNavOffers"
+            android:icon="@drawable/tag"
+            android:title="@string/side_nav_offers_title" />
+        <item
+            android:id="@+id/sideNavOrderHistory"
+            android:icon="@drawable/history"
+            android:title="@string/side_nav_order_history_title" />
+        <item
+            android:id="@+id/sideNavProfile"
+            android:icon="@drawable/user"
+            android:title="@string/side_nav_profile_title"/>
+        <item
+            android:id="@+id/sideNavSupport"
+            android:icon="@drawable/support"
+            android:title="@string/side_nav_support_title"/>
+    </group>
+
+    <group android:id="@+id/sideNavGroupAuth">
+        <item
+            android:id="@+id/sideNavLogout"
+            android:icon="@drawable/log_out"
+            android:title="@string/side_nav_logout_title"/>
+    </group>
+</menu>
